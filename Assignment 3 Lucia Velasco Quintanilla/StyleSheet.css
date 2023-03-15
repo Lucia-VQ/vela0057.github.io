@@ -1,0 +1,73 @@
+﻿body
+{
+    font-family:Calibri;
+    font-size:20px;
+    background-image:url("gloves gray image.PNG"); 
+    background-repeat:space;
+    background-position-x:center;
+    background-size:25%;
+   
+}
+
+h1{
+   padding: 10px;
+   text-align:center;
+   border-style:groove; 
+   display:block;
+   margin-left:auto;
+   margin-right:auto;
+   width:fit-content;
+}
+
+.Grid {
+    max-width: 1060px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #ef4a4a;
+    padding: 30px;
+}
+.griditem {
+    border: 10px solid #f1b750;
+    padding: 10px;
+}
+ #PunchImage{
+     width:100%;
+     height: auto;
+ }   
+
+ .Paragraph{
+     background-color:burlywood;
+     border: 5px solid #ef4a4a;
+     margin-left:auto;
+     margin-right: auto;
+     width:74%;
+         
+ }
+ .Animation{
+     width: 250px;
+     height: 250px;
+     position: relative;
+     animation-name: boxing;
+     animation-duration: 2s;
+     animation-iteration-count: infinite;
+     animation-direction: alternate;
+ }
+.Position {
+    width:fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+ @keyframes boxing {
+     0% {transform:rotate(25deg);  }
+    100% {transform:rotate(-25deg);
+    }
+    
+
+
+
+ }
+    
+    
