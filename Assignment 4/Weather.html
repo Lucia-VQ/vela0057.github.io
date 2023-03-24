@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" >
+    <title>Temperature conversion</title>
+    <link href="Temperature.css" type="text/css" rel="stylesheet" >
+    <link href="Earth.PNG" rel="shortcut icon" >
+</head>
+<body>
+    <!--JavaScript-->
+    <script>
+        function temperatureConverter(valNum) {
+            valNum = parseFloat(valNum);
+            var setText = document.getElementById("outputCelsius").value = (valNum - 32) / 1.8;
+            document.getElementById("outputCelsius").value = setText;
+        }
+
+    </script>
+    <div>
+        <div class="PageOrganization">
+
+            <h1>Fahrenheit to Celsius</h1>
+            <!--this is the Fahrenheit-->
+            <p>
+                <label> Enter a temperature in degrees Fahrenheit:</label>
+                <input id="inputFahrenheit" type="number" placeholder="Fahrenheit"
+                       oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+            </p>
+            <!--this is the Celsius conversion-->
+            <p>
+                <label> Equivalent temperature in degrees Celsius:</label>
+                <input id="outputCelsius" type="number" placeholder="Celsius" readonly>
+                
+
+
+            </p>
+            <button onclick="window.location.href = 'Weather.html';">
+                Clear
+            </button>
+
+        </div>
+
+
+    </div>
+
+
+
+</body>
+</html>

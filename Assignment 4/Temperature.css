@@ -1,0 +1,27 @@
+﻿body{
+    font-family:Calibri;
+    background-color:bisque;
+    font-size:24px;
+    background-image:url("Termometer.PNG");
+    background-repeat:no-repeat;
+    background-position:right;
+    background-attachment:fixed;
+}
+.PageOrganization{
+    text-align:center;
+    margin-left:100px;
+    width:fit-content;
+    
+}
+button{
+    padding:5px;
+    font-family:Calibri;
+    font-size:24px;
+    background-color:burlywood;
+    transition-duration:0.3s;
+    cursor:pointer;
+}
+button:hover{
+    background-color:orange;
+
+}
