@@ -1,0 +1,74 @@
+﻿body
+{
+}
+/*Navigation bar*/
+
+.w3-bar-block{
+    width:100%;
+    background-color:lightblue;
+    overflow: auto;
+}
+    .w3-bar-block a {
+        float: left;
+        width:20%; 
+        padding: 12px 0;
+        transition: all 0.3s ease;
+        font-size: 24px;
+        text-align:center;
+    }
+.w3-bar-block a:hover{
+    background-color:orange;
+}
+.active{
+    background-color:cornflowerblue;
+}
+a:link {
+    text-decoration:none;
+}
+/*This is for the Website content*/
+.content{
+    text-align:center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width:60%;
+    margin:auto;
+    display:flex;
+    grid-template-columns: auto auto auto;
+}
+.flex{
+    background-color:white;
+    max-width:100%;
+    margin:auto;
+    padding: 15px;
+}
+.flex-pics{
+    max-width:300px;
+}
+.Header {
+    text-align:center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 60%;
+    margin: auto;
+}
+h1{
+    color:orange;
+}
+.BBQ{
+    margin-left:auto;
+    margin-right:auto;
+    max-width:40%;
+}
+/*This is for the footer*/
+.footer{
+    position:relative;
+    left:0;
+    bottom:0;
+    width:100%;
+    background-color:#e8c26f;
+    color:white;
+    text-align:center;
+    font-size:24px;
+    padding:10px;
+}
+ul{
+    text-align:left;
+}

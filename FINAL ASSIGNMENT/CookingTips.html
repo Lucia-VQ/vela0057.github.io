@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="All about cooking">
+    <meta name="keywords" content="Recipes, cooking, baking, cooking tips">
+    <meta name="author" content="Lucia Velasco">
+    <title>Cooking Tips</title>
+    <link href="StyleSheet.css" type="text/css" rel="stylesheet">
+    <link href="Spatula.PNG" rel="shortcut icon">
+    <script src="https://kit.fontawesome.com/a93c65f032.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--JavaScript-->
+    <script>
+        function temperatureConverter(valNum) {
+            valNum = parseFloat(valNum);
+            var setText = document.getElementById('outputCelsius').value = (valNum - 32) / 1.8;
+            document.getElementById('outputCelsius').value = setText;
+        }
+    </script>
+    <!--Navigation bar-->
+    <div class="w3-bar-block">
+        <a href="HTMLIndex.html">Home</a>
+        <a href="Inspiration.html">Inspiration</a>
+        <a href="Recipes.html">Recipes</a>
+        <a class="active" href="CookingTips.html">Cooking Tips</a>
+        <a href="ShopForYourKitchen.html">Shop for your Kitchen</a>
+    </div>
+
+
+    <br>
+    <!--this is the page content-->
+    <div class="content">
+        <div class="flex">
+            <h2>Cooking Tips</h2>
+            <img class="flex-pics" src="Stew.JPG" />
+        </div>
+        <div class="flex">
+            <ul>
+                <li>Make sure your work area is well lit</li>
+                <li>Replace your kitchen sponge often</li>
+                <li>To avoid your cutting board slipping as you chop, put a damp paper or kitchen towel under your cutting board</li>
+                <li>Get your knives professionally sharpened once a year to revive those knives. Your chopping will get faster, more precise</li>
+                <li>Get your knives professionally sharpened once a year to revive those knives. Your chopping will get faster, more precise </li>
+                <li>Write  a note in your recipes and cookbooks after preparing that dish and you’ll not forget the adaptations or modifications you made to improve it</li>
+            </ul>
+
+        </div>
+        <div class="flex">
+            <h3>Conversion Fahrentheit to Celsius</h3>
+            <p>
+                <label>Enter a temperature in degrees Fahrenheit:</label>
+                <input id"inputFahrenheit" type="number" placeholder="Fahrenheit"
+                       oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+            </p>
+            <p>
+                <label>Equivalent temperature in degrees Celsius:</label>
+                <input id="outputCelsius" type="number" placeholder="Celsius" readonly>
+
+            </p>
+        </div>
+    </div>
+
+    <!--Footer with Pinterest, Instagram and Facebook-->
+    <div class="footer">
+        <p>
+            <i class="fa-brands fa-pinterest"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+        </p>
+
+        <span style="width:fit-content;">
+            <img width="140" src="CookingforLuv.PNG">
+        </span>
+    </div>
+
+</body>
+</html>
